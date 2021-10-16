@@ -1,0 +1,43 @@
+.contact-card {
+ display: flex;
+ align-items: center;
+ padding: 10px;
+ border: 1px solid #888;
+ justify-content: space-between;
+
+ &:not(:last-child) {
+  border-bottom: 0;
+ }
+
+ p {
+  margin: 0;
+  font-weight: 700;
+  max-width: 130px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+ }
+
+ &__name--label {
+  font-size: 12px;
+  color: #888;
+ }
+
+ &__actions {
+  display: flex;
+  gap: 10px;
+ }
+
+ &__icon {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+   background-color: rgb(195, 195, 195);
+  }
+ }
+}

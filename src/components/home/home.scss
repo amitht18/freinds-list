@@ -1,0 +1,100 @@
+.friends-list {
+ max-width: 400px;
+ height: 382px;
+ border: 2px #EEE solid;
+ border-radius: 4px;
+ box-sizing: border-box;
+
+ &__container {
+  &-header {
+   margin: 0;
+   background-color: #ccc;
+   padding: 10px;
+  }
+
+  form {
+   display: flex;
+   align-items: center;
+  }
+
+  &-search {
+   display: flex;
+   flex-direction: column;
+   border: 1px solid #c8c8c8;
+   padding: 10px;
+   width: calc(100% - 115px);
+   box-sizing: border-box;
+   margin: 10px;
+   border-radius: 20px;
+  }
+
+  &-sort {
+   padding: 9px 10px;
+   border: 1px solid #ccc;
+   border-radius: 25px;
+   height: 18px;
+   font-size: 14px;
+   display: flex;
+   align-items: center;
+   gap: 4px;
+   cursor: pointer;
+
+   &.active {
+       background-color: #EEE;
+   }
+  }
+
+  .pagination {
+   display: flex;
+   align-items: center;
+   height: 40px;
+   justify-content: flex-end;
+
+   .icon {
+    border: 1px solid #aaa;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 7px;
+    margin: 2px;
+    cursor: pointer;
+
+    &:hover {
+     background-color: #aaa;
+    }
+   }
+  }
+ }
+
+ &__names {
+  height: 237px;
+  overflow: auto;
+
+  &-placeholder {
+   height: 280px;
+   overflow: auto;
+   display: flex;
+   justify-content: center;
+  }
+
+  &--empty {
+   width: 200px;
+   display: flex;
+   align-content: center;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+
+   &-text {
+    font-size: 14px;
+    width: 260px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    color: #888;
+    font-weight: 700;
+    margin-top: 20px;
+    text-align: center;
+   }
+  }
+ }
+}
